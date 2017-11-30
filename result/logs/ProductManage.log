@@ -1,0 +1,46 @@
+[2017-11-17 10:57:26] [INFO] loginToHome------------------ Start
+[2017-11-17 10:57:26] [INFO] loginToHome 测试用例开始执行！
+[2017-11-17 10:57:27] [INFO] 检查是否成功登陆系统：http://127.0.0.1:81/zentao/my.html
+[2017-11-17 10:57:29] [INFO] loginToHome Success
+[2017-11-17 10:57:29] [INFO] loginToHome 测试用例执行成功！
+[2017-11-17 10:57:29] [INFO] bugFlow------------------ Start
+[2017-11-17 10:57:29] [INFO] bugFlow 测试用例开始执行！
+[2017-11-17 10:57:29] [INFO] 创建bug
+[2017-11-17 10:57:32] [INFO] 点击元素： xpath: //a[@id='menuqa']
+[2017-11-17 10:57:32] [INFO] 点击测试菜单的子菜单
+[2017-11-17 10:57:36] [INFO] 点击元素： xpath: //a[@id='submenubug']
+[2017-11-17 10:57:36] [INFO] 点击提bug
+[2017-11-17 10:57:40] [INFO] 点击元素： xpath: //div[@class='actions']//a[contains(text(),'提Bug')]
+[2017-11-17 10:57:40] [INFO] 选择产品模块
+[2017-11-17 10:57:43] [INFO] 点击元素： xpath: //div[@id='product_chosen']/a/span
+[2017-11-17 10:57:46] [INFO] 点击元素： xpath: //div[@id='product_chosen']//ul[@class='chosen-results']/li[text()='Product2SC534']
+[2017-11-17 10:57:46] [INFO] 选择模块
+[2017-11-17 10:57:49] [INFO] 点击元素： xpath: //div[@id='moduleIdBox']/div[@id='module_chosen']/a
+[2017-11-17 10:57:52] [INFO] 点击元素： xpath: //div[@id='moduleIdBox']//ul[@class='chosen-results']/li[text()='/moduleSC7152']
+[2017-11-17 10:57:52] [INFO] 选择影响版本
+[2017-11-17 10:57:56] [INFO] 点击元素： xpath: //span[@id='buildBox']
+[2017-11-17 10:57:59] [INFO] 点击元素： xpath: //span[@id='buildBox']//ul[@class='chosen-results']/li[text()='V1.0.0']
+[2017-11-17 10:57:59] [INFO] 选择当前指派人
+[2017-11-17 10:58:02] [INFO] 点击元素： xpath: //span[@id='assignedToBox']
+[2017-11-17 10:58:05] [INFO] 点击元素： xpath: //span[@id='assignedToBox']//ul[@class='chosen-results']/li[contains(text(),'userSC1350')]
+[2017-11-17 10:58:08] [INFO] 在元素： xpath: //input[@name='title']  中输入内容：用户名为空时，提交应提示SC6095
+[2017-11-17 10:58:08] [INFO] 切换iframe
+[2017-11-17 10:58:08] [INFO] 查找元素：By.xpath: //iframe[@class='ke-edit-iframe']成功
+[2017-11-17 10:58:09] [INFO] 查找元素：By.xpath: //body[@class='article-content']/p[text()='[步骤]']成功
+[2017-11-17 10:58:09] [INFO] 查找元素：By.xpath: //body[@class='article-content']/p[text()='[结果]']成功
+[2017-11-17 10:58:09] [INFO] 查找元素：By.xpath: //body[@class='article-content']/p[text()='[期望]']成功
+[2017-11-17 10:58:09] [INFO] 在元素： xpath: //body[@class='article-content']/p[text()='[步骤]']  中输入内容：用户名为空时，点击提交
+[2017-11-17 10:58:09] [INFO] 在元素： xpath: //body[@class='article-content']/p[text()='[结果]']  中输入内容：用户名为空时，提交时没有提示
+[2017-11-17 10:58:09] [INFO] 在元素： xpath: //body[@class='article-content']/p[text()='[期望]']  中输入内容：用户名为空时，提交应提示
+[2017-11-17 10:58:15] [INFO] 在元素： xpath: //input[@class='fileControl']  中输入内容：D:/workspaces/ChanDaoAutoPro/data/pic/1.jpg
+[2017-11-17 10:58:18] [INFO] 在元素： xpath: //table[@class='fileBox']//input[@class='form-control']  中输入内容：我是附件
+[2017-11-17 10:58:24] [INFO] 在元素： xpath: //button[@id='submit']做了提交操作
+[2017-11-17 10:58:27] [INFO] 点击元素： xpath: //form//td/a[text()='用户名为空时，提交应提示SC6095']
+[2017-11-17 10:58:28] [INFO] 当前bug的编号为：121
+[2017-11-17 10:58:28] [INFO] begin assert [激活] [激活]
+[2017-11-17 10:58:28] [INFO] 检查当前bug的状态是否为激活:  assert contains ok![激活] [激活]
+[2017-11-17 10:58:28] [INFO] bugFlow Success
+[2017-11-17 10:58:28] [INFO] bugFlow 测试用例执行成功！
+[2017-11-17 10:58:29] [INFO] 执行成功的用例 = bugFlow
+[2017-11-17 10:58:29] [INFO] 执行成功的用例 = loginToHome
+[2017-11-17 10:58:31] [INFO] Excel报告已经生成，请查看：[D:\workspaces\ChanDaoAutoPro\.\result\excelReports\TestReport_2017-11-17_10-58-禅道-自动化测试-bug处理流程.xlsx]

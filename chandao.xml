@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="禅道-自动化测试-bug处理流程" allow-return-values="true" parallel="tests" thread-count="5">
+
+    <!--地址  -->
+    <parameter name="serverURL" value="http://127.0.0.1:4723/wd/hub" />
+    <test name="提交bug">
+        <classes>
+            <class name="maker.ProductManage"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="excelReporter.TestResultListener" />
+        <listener class-name="excelReporter.ExcelReporter" />
+        <!--<listener class-name="utils.AssertionListener"></listener>-->
+    </listeners>
+</suite>
